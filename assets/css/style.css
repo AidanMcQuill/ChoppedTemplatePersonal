@@ -688,16 +688,32 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
- .BoxAttributes {
-   text-align: center;
-   transition: 0.3s;
+/* Resume section */
+#Resume {
+  text-align: center;
+}
+
+.BoxAttributes {
+  transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
-   
- }
+  border-radius: 90%;
+}
+
+/* Apply styles only for mobile view */
+/* Apply styles only for mobile view */
+/* Apply styles only for mobile view */
+/* Apply styles only for mobile view */
+@media (max-width: 768px) {
+  .BoxAttributes iframe {
+    width: 10%; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+  }
+}
+
+
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
