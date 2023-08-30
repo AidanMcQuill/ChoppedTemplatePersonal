@@ -18,6 +18,16 @@ darker cyan: #45A29E Hover text
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/* Reset CSS */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
 body {
   font-family: 'Chakra Petch', sans-serif;
   color: #e2e3e4 ;
@@ -224,6 +234,7 @@ h6 {
   padding: 0 5px 0 7px;
   color: #45A29E;
 }
+ 
 
 @media (min-width: 992px) {
 
@@ -330,11 +341,129 @@ h6 {
   background: url("../img/dynamic_wireframe_particle_landscape_background.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
+  margin: 0 auto; /* Center the hero section horizontally */
 }
+
+ 
+
+/* Center typed items under h1 for mobile */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content {
+    text-align: center;
+    margin-top: 20px; /* Add some margin for spacing */
+  }
+
+  .image-content {
+    text-align: center;
+    margin-top: 20px; /* Add some margin for spacing */
+  }
+
+  .typed {
+    text-align: center; /* Center the typed items */
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  #hero {
+    text-align: center;
+    padding: 10, 10, 10, 10; /* Adjust padding as needed */
+  }
+}
+
+  @media (max-width: 768px) {
+    .content-wrapper {
+      justify-content: l; /* or justify-content: flex-start; */
+      margin-right: 0; /* Adjust margin as needed */
+    }
+  }
+
+    @media (max-width: 768px) {
+      .text-content {
+        padding-right: 0; /* Adjust padding as needed */
+      }
+      .typed {
+        margin-right: 2%;
+      }
+      .data-typed-items {
+        margin-right: 75%;
+      }
+    }
+
+  /* Adjust font sizes for mobile */
+/* Adjust image size and text alignment for mobile */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center; /* Center align content */
+    margin-right: 0; /* Remove the margin */
+    padding: 0 15px; /* Add some horizontal padding for better spacing */
+  }
+
+  .text-content {
+    padding-right: 0; /* Remove right padding for text content */
+    text-align: center; /* Center align text content */
+  }
+
+  .image-content {
+    margin-top: 20px; /* Add some space between text and image */
+  }
+
+  .image-content img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+  }
+}
+
+/* Center typed items under h1 for mobile */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content {
+    text-align: center;
+    margin-top: 20px; /* Add some margin for spacing */
+  }
+
+  .typed {
+    text-align: left; /* Align typed items to the left */
+    margin-top: 10px; /* Add some margin for spacing */
+    margin-right: 375px; /* Move to the left */
+  }
+
+  .image-content {
+    text-align: center;
+    margin-top: 20px; /* Add some margin for spacing */
+  }
+}
+
+
+/* Disable header on index page for mobile */
+@media (max-width: 768px) {
+  body #header1 {
+    display: none;
+  }
+}
+
+
+
 
 @media (min-width: 992px) {
   #hero {
-    padding-left: 160px;
+    margin: 0 auto; /* Center the hero section horizontally */
+    padding: 20px; /* Add some padding to prevent content from overflowing */
   }
 }
 
@@ -387,6 +516,7 @@ h6 {
 }
 
 
+
 @media (max-width: 992px) {
   #hero {
     text-align: center;
@@ -401,7 +531,10 @@ h6 {
     margin-top: 10px;
     font-size: 20px;
     line-height: 24px;
+    margin-left: 40%;
   }
+
+  
 }
 
 /*--------------------------------------------------------------
