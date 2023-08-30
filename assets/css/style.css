@@ -90,7 +90,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  
 }
 
 #preloader:before {
@@ -155,6 +155,26 @@ h6 {
   }
 }
 
+#header1 {
+  max-width: 100%;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#bx-github {
+  margin-right:70px;
+}
+
+#header1 h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #45A29E;
+  position: relative;
+   font-family: 'Chakra Petch', sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -284,9 +304,29 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align content to the right */
+  margin-right: 250px; /* Adjust margin to center content to the left */
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 10px; /* Reduce padding to move text content further left */
+}
+
+.image-content {
+  flex: 1;
+  text-align: right;
+}
+
+/* Add any other necessary styling here */
+
+
 #hero {
   width: auto;
-  height: 100vh;
+  height: 79vh;
   background: url("../img/dynamic_wireframe_particle_landscape_background.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
@@ -346,6 +386,7 @@ h6 {
   color: #6f94fa;
 }
 
+
 @media (max-width: 992px) {
   #hero {
     text-align: center;
@@ -374,7 +415,8 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+  padding-top: 0%;
 }
 
 .section-title h2 {
@@ -414,17 +456,18 @@ section {
   
 }
 
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .AboutRules{
-  margin: 15px;
+  margin: 30px, 30px;
   padding: 30px;
   text-align: center;
   /* background-color: rgba(116, 172, 255, 0.5); */
   border-radius: 90px;
-  min-height: 50%;
-  max-width: 94%;
+  min-height: 75%;
+  max-width: 100%;
   position: relative;
   align-items: center;
   
@@ -460,18 +503,18 @@ section {
 }
 
 .about .content ul strong {
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
 .about .content ul i {
   font-size: 16px;
-  margin-right: 5px;
+  margin-right: 10px;
   color: #45A29E;
   line-height: 0;
 }
 
 .about .content p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 
@@ -1059,11 +1102,11 @@ section {
   font-size: 15;
   font-style: italic;
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 10px 0;
 }
 
 #footer .social-links {
-  margin: 0 0 40px 0;
+  margin: 0 0 10px 0;
 }
 
 #footer .social-links a {
