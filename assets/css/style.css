@@ -24,6 +24,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol {
   padding: 0;
 }
 
+
 body {
   font-family: Arial, sans-serif;
 }
@@ -966,7 +967,7 @@ section {
   width: 100px;
   height: 100px;
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: center;
   transition: ease-in-out 0.3s;
   position: relative;
@@ -1082,6 +1083,47 @@ section {
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 }
+
+/*--------------------------------------------------------------
+# Relations
+--------------------------------------------------------------*/
+
+.parent {
+  display: table-cell;
+  justify-content: space-between;
+}
+
+.relations .image-content {
+  text-align: center;
+ 
+  transition: all ease-in-out 0.3s;
+  
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+}
+
+
+.Relations-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  min-width: 400px;
+  min-height: 400px;
+  
+  box-shadow: 400px 450px rgba(110, 123, 131, 0.05);
+}
+
+.relation-img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+
+
+
+
+
+
+
 
 
 /*--------------------------------------------------------------
